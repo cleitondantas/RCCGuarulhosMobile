@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=320; user-scalable=no" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>Tela Principal</title>
+
+<script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"></script>
+<link rel="stylesheet" href="themes/theme-rccbr.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet"
+	href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<!-- 
+<link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="jquery.mobile/jquery.mobile.structure-1.4.5.min.css" />
+<link rel="stylesheet"  href="jquery.mobile/jquery.mobile.theme-1.4.5.css"/>
+
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="jquery.mobile/jquery.mobile-1.4.5.min.js"></script>
+<script src="jquery.mobile/index.js"></script>
+ -->
+</head>
+<body class="theme">
+	<div data-role="header" data-theme="a" class="ui-header-fixed">
+		<a href="#" onclick="callAnothePage('index.html')"	data-transition="slideup" class="ui-btn ui-icon-home ui-btn-icon-left" style="height: 15px"></a>
+		<h1>Grupos de oração</h1>
+	</div>
+	<div style="height: 40px"></div>
+	<div style="text-align: center; width: 100%;">
+		<h4>Sempre tem um grupo perto de você !</h4>
+
+	</div>
+	<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+		<div data-role="collapsible">
+			<h4>Domingo</h4>
+			<ul data-role="listview" data-inset="true" >
+				<li><a href="#">Sagrada Face</a></li>
+				<li><a href="#">Jesus Ressuscitado</a></li>
+				<li><a href="#">Caminhando com Jesus</a></li>
+				<li><a href="#">Filhos de Maria</a></li>
+			</ul>
+		</div>
+		<div data-role="collapsible">
+			  
+			<h2>Segunda Feira</h2>
+			<ul data-role="listview" data-inset="true" >
+				<li><a href="#">Jesus Misericordioso</a></li>
+				<li><a href="#">Rosa Mística</a></li>
+				<li><a href="#">Água Viva</a></li>
+				<li><a href="#">Maria Estrela da Evangelização</a></li>
+			</ul>
+		</div>
+		<div data-role="collapsible">
+			  
+			<h2>Terça Feira</h2>
+			<ul data-role="listview" data-inset="true" >
+				<li><a href="#">São Pedro Apóstolo</a></li>
+				<li><a href="#" onclick="callAnothePage('Santo_Antonio_de_Gopouva.html')">Santo Antonio de Gopoúva</a></li>
+				<li><a href="#">Doce Senhor</a></li>
+				<li><a href="#">São Miguel Arcanjo</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+<script>
+	function callAnothePage(path) {
+		window.location = path;
+	}
+</script>
+</html>
